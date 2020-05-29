@@ -19,7 +19,7 @@
 
 html,body{
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--bg-main-col);
     font-family: 'Inter', sans-serif;
 }
@@ -44,6 +44,7 @@ main{
     width: 100%;
     display: flex;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 h1{
@@ -94,6 +95,7 @@ h5{
 
 .grid-item-lg{
     background-color: var(--card-bg-col);
+    margin-bottom: 2rem;
     height: 18rem;
     display: flex;
     flex-direction: column;
@@ -101,7 +103,7 @@ h5{
     justify-content: center;
 }
 
-.username{
+.grid-item-lg .username{
     display: flex;
     color: var(--txt-off-col);
     margin-bottom: 1rem;
@@ -111,13 +113,13 @@ h5{
     margin-right: 0.2rem;
 }
 
-.count{
+.grid-item-lg .count{
     font-size: 3rem;
     font-weight: 700;
     color: var(--txt-main-col);
 }
 
-.unit{
+.grid-item-lg .unit{
     font-size: 1rem;
     font-weight: 400;
     color: var(--txt-off-col);
@@ -125,7 +127,7 @@ h5{
     margin-bottom: 3rem;
 }
 
-.stat{
+.grid-item-lg .stat{
     display: flex;
     align-items: center;
 }
@@ -162,10 +164,55 @@ h5{
     border-top: var(--yt-col) 3px solid;
 }
 
+.grid-item-sm{
+    background-color: var(--card-bg-col);
+    height: 12rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.grid-item-sm .username{
+    position: absolute;
+    right: 10%;
+    top:10%;
+    color: var(--txt-off-col);
+
+}
+
+.grid-item-lg img{
+    margin-right: 0.2rem;
+}
+
+.grid-item-sm .count{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--txt-main-col);
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.grid-item-sm .unit{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--txt-off-col);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.grid-item-sm .stat{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
 
 
 
-@media (min-width:800px){
+
+@media (min-width:960px){
     .grid{
         grid-template-columns: repeat(4,23.5%);
         column-gap: 2%;
