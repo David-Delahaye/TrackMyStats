@@ -5,22 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackMyStats</title>
     <link rel="icon" href="images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div id="light-switch">on off</div>
-    </header>
+    <div id="top-col"></div>
     <main>
         <section class="summary">
             <div class="header">
-                <h1>TrackMyStats</h1>
-                <p>312 Followers</p>
+                <div>
+                    <h1>Social Media Dashboard</h1>
+                    <h5>Total Followers: 312</h5>
+                </div>
+                <div id="light-switch">Dark Mode
+                    <div id="pill">
+                        <div id="ball"></div>
+                    </div>
+                </div>
             </div>
             <div class="grid">
-                <div class="grid-item">a</div>
-                <div class="grid-item">b</div>
-                <div class="grid-item">c</div>
-                <div class="grid-item">d</div>
+                <div id="facebook" class="grid-item-lg">
+                    <div class="username">
+                        <img src="images/icon-facebook.svg" alt="">
+                        <p> @davDelahaye</p>
+                    </div>
+                    <div class="count">
+                        203
+                    </div>
+                    <div class="unit">
+                        FOLLOWERS
+                    </div>
+                    <div class="stat success">
+                        <img src="images/icon-up.svg" alt="">
+                        12 Today
+                    </div>
+                </div>
+
+                <div id="twitter" class="grid-item-lg">
+                    <div class="username">
+                        <img src="images/icon-twitter.svg" alt="">
+                        <p> @davDelahaye</p>
+                    </div>
+                    <div class="count">
+                        1449
+                    </div>
+                    <div class="unit">
+                        FOLLOWERS
+                    </div>
+                    <div class="stat success">
+                        <img src="images/icon-up.svg" alt="">
+                        96 Today
+                    </div>
+                </div>
+
+                <div id="instagram" class="grid-item-lg">
+                    <div class='border'></div>
+                    <div class="username">
+                        <img src="images/icon-instagram.svg" alt="">
+                        <p> @davidDelahaye</p>
+                    </div>
+                    <div class="count">
+                        812
+                    </div>
+                    <div class="unit">
+                        FOLLOWERS
+                    </div>
+                    <div class="stat success">
+                        <img src="images/icon-up.svg" alt="">
+                        2 Today
+                    </div>
+                </div>
+
+                <div id="youtube" class="grid-item-lg">
+                    <div class="username">
+                        <img src="images/icon-youtube.svg" alt="">
+                        <p>David D.</p>
+                    </div>
+                    <div class="count">
+                        19k
+                    </div>
+                    <div class="unit">
+                        SUBSCRIBERS
+                    </div>
+                    <div class="stat fail">
+                        <img src="images/icon-down.svg" alt="">
+                        9 Today
+                    </div>
+                </div>
+
             </div>
         </section>
         <section class="overview">
@@ -35,5 +107,6 @@
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
